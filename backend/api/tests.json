@@ -1,0 +1,26 @@
+{
+  "tests": [
+    {
+      "name": "Get vacancies list",
+      "method": "GET",
+      "path": "/?resource=vacancies&action=list",
+      "expectedStatus": 200,
+      "expectedBody": {
+        "success": true,
+        "data": "array"
+      },
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Get companies list",
+      "method": "GET",
+      "path": "/?resource=companies&action=list",
+      "expectedStatus": 200,
+      "expectedBody": {
+        "success": true,
+        "data": "array"
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}
